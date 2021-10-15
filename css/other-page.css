@@ -1,0 +1,389 @@
+@import "style.css";
+
+/************* change page *************/
+
+a:hover {
+    color: white;
+}
+
+.maxW {
+    max-width: 900px !important;
+}
+
+.h0 {
+    opacity: 0;
+    display: none;
+    overflow: hidden;
+}
+
+#change {
+    position: relative;
+    margin: 120px 0;
+    text-align: center;
+}
+
+#change > .bg-other-page {
+    height: calc(100% + 100px);
+}
+
+.bg-other-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.move-pages {
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+#change .title-page {
+    display: inline-block;
+    background-color: #baffe4;
+    border-radius: 10px;
+    height: 135px;
+    width: 140px;
+    text-align: center;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+#change .title-page:hover {
+    background-color: #f9f9f9;
+    box-shadow: 1px 2px 10px #bbb;
+}
+
+#change .wrapper-icon svg {
+    width: 90px;
+    height: 90px;
+}
+#change .wrapper-icon img {
+    width: 90px;
+    height: 90px;
+}
+
+.wrapper-table {
+    max-width: 400px;
+    padding: 50px 0 0 0;
+}
+
+table {
+    border-radius: 25px;
+    box-shadow: 1px 0 10px #5a4f4f;
+}
+
+thead {
+    font-size: 20px;
+}
+
+td,
+th {
+    border: none !important;
+}
+
+td:first-child {
+    border-left: 3px solid #b8b8b8 !important;
+}
+
+.bg-calculator {
+    position: initial;
+}
+
+.wrapper-calculation {
+    max-width: 450px;
+}
+
+.wrapper-rahn-ejare {
+    top: 50%;
+    left: 50%;
+    margin-top: -79px;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 65%;
+    max-width: 400px;
+}
+
+.wrapper-rahn-ejare label,
+thead {
+    font-size: 22px;
+}
+
+.wrapper-rahn-ejare input {
+    background-color: #f3f3f3;
+}
+
+.input-group-text.my-rad {
+    border-radius: 30px 0 0 30px !important;
+}
+
+.input-group-sm > .form-control {
+    border-radius: 0 30px 30px 0 !important;
+}
+
+.input-group,
+label[for="price"],
+.wrapper-in-price {
+    max-width: 280px;
+    margin: 0 auto;
+}
+.wrapper-in-price input::-webkit-outer-spin-button,
+.wrapper-in-price input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.wrapper-in-price input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.cal {
+    color: white;
+    line-height: 45px;
+}
+
+/*hover button*/
+
+.glow-on-hover {
+    width: 150px;
+    height: 45px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(#4d00ff, #00e58b);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 85px;
+    margin: 0 auto;
+}
+
+.glow-on-hover:before {
+    content: "";
+    background: linear-gradient(178deg, #268b80, #395f7b, #493876);
+    position: absolute;
+    top: -5px;
+    left: -4px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(3px);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 30px;
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #4d00ff, #5d1973);
+    left: 0;
+    top: 0;
+    border-radius: 40px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/*end of hover button*/
+
+.request-counselor {
+    width: 340px;
+    background: white;
+    border-radius: 10px;
+    padding: 12px;
+    transition: 0.3s;
+    height: 65px;
+    margin-bottom: 15px;
+}
+
+.request-counselor:hover {
+    filter: drop-shadow(2px 4px 6px #5f5f5f);
+    font-weight: bold;
+}
+.request-counselor a {
+    height: 100%;
+    display: block;
+}
+
+.request-counselor .circle-icon {
+    display: inline-block;
+    border-left: 2px solid #bfbfbf;
+    width: 15٪;
+    padding: 0 0 0 2%;
+}
+
+.request-counselor .circle-icon img {
+    width: 35px;
+    /* margin: 0 15px; */
+    margin: 0;
+}
+
+.request-counselor .text-request {
+    width: 80٪;
+    text-align: right;
+    z-index: 1;
+    /* margin: 0 10px; */
+    margin: 0;
+    display: inline-block;
+}
+
+/************ end of change page ************/
+
+/*sell page*/
+.h-38 {
+    height: 38px !important;
+}
+
+.wrapper-price-boxs {
+    max-width: 750px;
+}
+
+.price-box {
+    background: white;
+    padding: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 230px;
+    margin: 10px auto;
+    box-shadow: 0 0 13px #999;
+}
+
+.price-box .header-price-box {
+    background: #00e58b;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.price-box p {
+    margin: 0;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+}
+
+.wrapper-box-sell {
+    padding: 100px;
+}
+
+/*end of sell page*/
+
+/************ responsive *************/
+
+@media screen and (max-width: 768px) {
+    .wrapper-table {
+        padding: 15px 0 0 0 !important;
+    }
+    /*change page*/
+    .wrapper-calculation {
+        margin-top: 100px;
+    }
+
+    .wrapper-change .row.page-change {
+        transform: rotateX(180deg);
+    }
+
+    .wrapper-change .row.page-change > div {
+        transform: rotateX(180deg);
+    }
+
+    .wrapper-calculation > img {
+        position: relative;
+    }
+
+    /*end of change page*/
+    /*sell page*/
+    .maxW {
+        max-width: 540px !important;
+    }
+
+    .wrapper-box-sell {
+        background-color: white;
+        border-radius: 35px;
+        padding: 50px;
+        margin: 50px 0;
+    }
+
+    .wrapper-box-sell > img {
+        display: none;
+    }
+
+    /*end of sell page*/
+}
+
+@media screen and (max-width: 476px) {
+    /*page change*/
+    #change {
+        overflow: hidden;
+        margin-top: 60px;
+    }
+
+    .move-pages {
+        top: 10px;
+    }
+
+    #change > .bg-other-page {
+        height: 165%;
+        top: -300px;
+    }
+
+    #change .wrapper-icon svg {
+        width: 60px;
+        height: 60px;
+    }
+    #change .wrapper-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #change .title-page {
+        display: inline-block;
+        background-color: #baffe4;
+        border-radius: 10px;
+        height: 100px;
+        width: 32%;
+    }
+
+    #change .title-page p {
+        font-size: 13px;
+    }
+
+    .price-box .header-price-box {
+        font-size: 13px;
+    }
+
+    /*end of page change*/
+}
+
+/*********** end of responsive *************/
