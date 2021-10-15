@@ -36,7 +36,7 @@ function openNav() {
             '                          stroke="#272727" stroke-linecap="round" stroke-width="7"/>\n' +
             '                    <line id="Line_13" data-name="Line 13" x1="36" transform="translate(350.644 35)" fill="none"\n' +
             '                          stroke="#272727" stroke-linecap="round" stroke-width="7"/>\n' +
-            '                    <line id="Line_14" data-name="Line 14" x1="18" transform="translate(368.644 25)" fill="none"\n' +
+            '                    <line id="Line_14" data-name="Line 14" x1="36" transform="translate(350.644 25)" fill="none"\n' +
             '                          stroke="#272727" stroke-linecap="round" stroke-width="7"/>\n' +
             "                </g>\n" +
             "            </svg>";
